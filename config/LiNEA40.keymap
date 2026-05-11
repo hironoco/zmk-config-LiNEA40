@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -69,6 +69,21 @@
         wireless {
             bindings = <&mo 6>;
             key-positions = <36 35>;
+        };
+
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <16 17>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <17 18>;
+        };
+
+        middle_click {
+            bindings = <&mkp MB3>;
+            key-positions = <16 18>;
         };
     };
 
