@@ -69,7 +69,7 @@
         compatible = "zmk,combos";
 
         wireless {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <36 35>;
         };
     };
@@ -96,7 +96,7 @@
         default_layer {
             bindings = <
 &kp ESC    &kp Q      &kp U   &kp L   &kp KP_NUM                                         &kp F        &kp W  &kp R   &kp Y          &kp P
-&kp E      &kp I      &kp A   &kp O   &mo 5                                              &kp K        &kp T  &kp N   &kp S          &kp H
+&kp E      &kp I      &kp A   &kp O   &mo 5                                              &kp K        &kp T  &kp N   &kp S          &lt 7 H
 &kp Z      &kp X      &kp C   &kp V   &tog 1                                             &kp G        &kp D  &kp M   &kp J          &kp B
 &kp LCTRL  &kp LSHFT  &trans  &trans  &lt 4 SPACE  &mt LSHIFT LANG2    &mt RSHIFT LANG1  &lt 2 ENTER         &trans  &kp RIGHT_ALT  &kp LWIN
             >;
@@ -157,6 +157,15 @@
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+            >;
         };
 
         WIRELESS {
