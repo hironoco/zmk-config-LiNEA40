@@ -62,8 +62,7 @@ spi0_sleep:
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; // NCS-NFC1
 
-trackball:
-    trackball @0
+trackball: trackball@0
     {
         status = "okay";
         compatible = "pixart,pmw3610";
