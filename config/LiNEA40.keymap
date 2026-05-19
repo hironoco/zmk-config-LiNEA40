@@ -45,9 +45,7 @@
     };
 };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 1000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 5 1000>; };
 
 &msc_input_listener {
     speed_up {
@@ -74,21 +72,6 @@
             bindings = <&mo 6>;
             key-positions = <36 35>;
         };
-
-        left_click {
-            bindings = <&mkp MB1>;
-            key-positions = <16 17>;
-        };
-
-        right_click {
-            bindings = <&mkp MB2>;
-            key-positions = <17 18>;
-        };
-
-        middle_click {
-            bindings = <&mkp MB3>;
-            key-positions = <16 18>;
-        };
     };
 
     behaviors {
@@ -112,10 +95,10 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp Q      &kp U    &kp L   &kp KP_NUM                                         &kp F        &kp W  &kp R   &kp Y          &kp P
-&kp E      &kp I      &kp A    &kp O   &kp CAPS                                           &kp K        &kp T  &kp N   &kp S          &kp H
-&kp Z      &kp X      &kp C    &kp V   &tog 1                                             &kp G        &kp D  &kp M   &kp J          &kp B
-&kp LCTRL  &kp LSHFT  &kp DEL  &trans  &lt 4 SPACE  &mt LSHIFT LANG2    &mt RSHIFT LANG1  &lt 2 ENTER         &trans  &kp RIGHT_ALT  &kp LWIN
+&kp ESC    &kp Q      &kp U   &kp L   &kp KP_NUM                                         &kp F        &kp W  &kp R   &kp Y          &kp P
+&kp E      &kp I      &kp A   &kp O   &mo 5                                              &kp K        &kp T  &kp N   &kp S          &kp H
+&kp Z      &kp X      &kp C   &kp V   &tog 1                                             &kp G        &kp D  &kp M   &kp J          &kp B
+&kp LCTRL  &kp LSHFT  &trans  &trans  &lt 4 SPACE  &mt LSHIFT LANG2    &mt RSHIFT LANG1  &lt 2 ENTER         &trans  &kp RIGHT_ALT  &kp LWIN
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
